@@ -17,3 +17,6 @@ class DashboardPage:
 
     def search_patient(self, patient_id):
         self.search_patient_input.fill(patient_id)
+
+    def click_logout(self):
+        self.page.locator(".btn-logout").click()

@@ -37,12 +37,10 @@ def test_smoke_flow(page, hospital_url):
         ward="Ward A"
     )
                         
-    dashboard_page.search_patient("QA test")
-    dashboard_page.click_search_button()
-    
-    
+    dashboard_page.search_patient("QA test")    
     # assertion: checking if the patient is in the search results
     expect(page.locator("#dataContainer")).to_contain_text(the_patient_id)
+
     
     time.sleep(5)
 
