@@ -1,0 +1,51 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+env.bak/
+build/
+dist/
+
+# Pytest cache
+.pytest_cache/
+
+# Playwright reports and artifacts
+html-report/
+reports/
+htmlReport/
+playwright-report/
+test-results/
+*.trace.zip
+
+# IDE / editor configs
+.vscode/
+*.code-workspace
+.idea/
+*.suo
+*.ntvs*
+*.vs/
+*.pydevproject
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+
+# Windows specific
+ehthumbs.db
+Icon?
+
+# Temporary files
+*.swp
+*~
