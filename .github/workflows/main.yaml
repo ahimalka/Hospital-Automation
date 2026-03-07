@@ -62,6 +62,10 @@ jobs:
         fi
         if [ -d temp-history ]; then cp -r temp-history allure-history/history/; fi
 
+    - name: Copy Hospital App to Report Folder
+      if: always()
+      run: cp hospital.html allure-history/
+
     - name: Deploy to GitHub Pages
       id: deployment
       if: always()
