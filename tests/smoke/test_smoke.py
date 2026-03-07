@@ -14,7 +14,7 @@ def test_smoke_flow(page, hospital_url):
     page.goto(hospital_url)
 
     # assertion: make sure we are on the correct page
-    expect(page).to_have_url("file:///C:/Users/97250/Desktop/Automation/hospital.html")
+    expect(page).to_have_url("https://qahackeru3.netlify.app/")
 
     login_page.login("nurse_admin", "clinical2026")
 
