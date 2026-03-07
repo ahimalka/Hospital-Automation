@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright
 from pages.a_login_page import LoginPage
+import os
 
 @pytest.fixture
 def hospital_url():
@@ -10,7 +11,8 @@ def hospital_url():
 def browser():
     """Fixture to create and manage a browser instance"""
     playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=False)
+    headless = os.environ.get('CI') == 'true'
+    browser = playwright.chromium.launch(headless=headless)
     yield browser
     browser.close()
     playwright.stop()
