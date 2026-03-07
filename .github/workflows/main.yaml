@@ -55,7 +55,11 @@ jobs:
         unzip allure-2.24.0.zip
         export PATH=$PATH:$(pwd)/allure-2.24.0/bin
         if [ -d allure-history/history ]; then cp -r allure-history/history temp-history; fi
-        ./allure-2.24.0/bin/allure generate allure-results --clean -o allure-history
+        if [ -d allure-results ] && [ "$(ls -A allure-results 2>/dev/null)" ]; then
+          ./allure-2.24.0/bin/allure generate allure-results --clean -o allure-history
+        else
+          echo "No test results found, skipping report generation"
+        fi
         if [ -d temp-history ]; then cp -r temp-history allure-history/history/; fi
 
     - name: Deploy to GitHub Pages
