@@ -12,7 +12,7 @@ def hospital_url():
 def browser_instance():
     with sync_playwright() as p:
         # headless=True is required for GitHub Actions
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         yield browser
         browser.close()
 
