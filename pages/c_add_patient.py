@@ -10,15 +10,15 @@ class AddPatientPage:
         self.ward = page.locator("#patientWard")
         self.admit_patient_button = page.locator("#submitPatientBtn")
 
-    def click_add_patient(self):
-        self.add_patient_button.click()
+    async def click_add_patient(self):
+        await self.add_patient_button.click()
 
-    def fill_patient_details(self, patient_id, name, category, status, doctor, ward):
-        self.patient_id.fill(patient_id)
-        self.patient_name.fill(name)
-        self.category_dropdown.select_option(category)
-        self.patient_status_dropdown.select_option(status)
-        self.assigned_doctor.fill(doctor)
-        self.ward.fill(ward)
-        self.admit_patient_button.click()
+    async def fill_patient_details(self, patient_id, name, category, status, doctor, ward):
+        await self.patient_id.fill(patient_id)
+        await self.patient_name.fill(name)
+        await self.category_dropdown.select_option(category)
+        await self.patient_status_dropdown.select_option(status)
+        await self.assigned_doctor.fill(doctor)
+        await self.ward.fill(ward)
+        await self.admit_patient_button.click()
 

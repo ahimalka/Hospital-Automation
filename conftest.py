@@ -1,5 +1,5 @@
 import pytest
-from playwright.sync_api import sync_playwright
+from playwright.async_api import async_playwright
 from pages.a_login_page import LoginPage
 
 @pytest.fixture
@@ -7,23 +7,21 @@ def hospital_url():
     return "https://qahackeru3.netlify.app/"
 
 @pytest.fixture
-def browser():
+async def browser():
     """Fixture to create and manage a browser instance"""
-    playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=False)
-    yield browser
-    browser.close()
-    playwright.stop()
+    async with async_playwright() as playwright:
+        browser = await playwright.chromium.launch(headless=True)
+        yield browser
 
 @pytest.fixture
-def page(browser):
+async def page(browser):
     """Fixture to create a page context"""
-    page = browser.new_page()
+    page = await browser.new_page()
     yield page
-    page.close()
+    await page.close()
 
 @pytest.fixture
-def login_page(page, hospital_url):
+async def login_page(page, hospital_url):
     """Fixture to initialize login page and navigate to hospital portal"""
-    page.goto("https://qahackeru3.netlify.app/")
+    await page.goto("https://qahackeru3.netlify.app/")
     return LoginPage(page)

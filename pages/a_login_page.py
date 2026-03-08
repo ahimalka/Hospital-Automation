@@ -8,11 +8,11 @@ class LoginPage:
         self.error_message = page.locator(".error-message")
 
 
-    def login(self, user_text, pass_text):
-        self.username_input.fill(user_text)
-        self.password_input.fill(pass_text)
-        self.login_button.click()
+    async def login(self, user_text, pass_text):
+        await self.username_input.fill(user_text)
+        await self.password_input.fill(pass_text)
+        await self.login_button.click()
 
-    def get_error_message(self):
-        return self.error_message.text_content()
+    async def get_error_message(self):
+        return await self.error_message.text_content()
 
