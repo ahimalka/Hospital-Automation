@@ -63,8 +63,7 @@ from pages.a_login_page import LoginPage
     # Scenario 20: Common weak credentials attempt
     ("test@hospital.com", "123456", "Invalid credentials"),
 ])
-@pytest.mark.asyncio
-async def test_negative_login(login_page, username, password, expected_error):
+def test_negative_login(login_page, username, password, expected_error):
     """
     Test negative login scenarios for the hospital portal.
     
@@ -86,9 +85,9 @@ async def test_negative_login(login_page, username, password, expected_error):
         expected_error: The expected error message "Invalid credentials"
     """
     # Perform login with invalid credentials
-    await login_page.login(username, password)
+    login_page.login(username, password)
     
     # Verify that the expected error message is displayed
-    error_message = await login_page.get_error_message()
+    error_message = login_page.get_error_message()
     assert error_message == expected_error, \
         f"Expected error '{expected_error}' but got '{error_message}' for username='{username}' and password='{password}'"
