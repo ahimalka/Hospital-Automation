@@ -16,6 +16,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -32,13 +33,18 @@ jobs:
         java-version: 17
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Install Playwright
       run: playwright install --with-deps
 
-    - name: Run tests
-      run: python -m pytest --alluredir=allure-results
+    - name: Clean Cache and Run Tests
+      # This step handles the fix. We removed the redundant 'Run tests' step below it.
+      run: |
+        find . -type d -name "__pycache__" -exec rm -rf {} +
+        pytest --alluredir=allure-results -p no:asyncio
 
     - name: Checkout history
       uses: actions/checkout@v4
@@ -64,7 +70,8 @@ jobs:
 
     - name: Copy Hospital App to Report Folder
       if: always()
-      run: cp hospital.html allure-history/
+      run: |
+        if [ -f hospital.html ]; then cp hospital.html allure-history/; fi
 
     - name: Deploy to GitHub Pages
       id: deployment
