@@ -1,3 +1,4 @@
 pytest
 pytest-playwright
+pytest-asyncio
 allure-pytest
