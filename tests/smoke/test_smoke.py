@@ -18,7 +18,7 @@ def test_smoke_flow(page, hospital_url):
 
     login_page.login("nurse_admin", "clinical2026")
 
-    # assertion: checking the presence of the logout button
+    # assertion: checsync_playwrightking the presence of the logout button
     expect(page.locator(".btn-logout")).to_be_visible()
 
     dashboard_page.click_labs()

@@ -44,7 +44,7 @@ jobs:
       # This step handles the fix. We removed the redundant 'Run tests' step below it.
       run: |
         find . -type d -name "__pycache__" -exec rm -rf {} +
-        pytest --alluredir=allure-results -p no:asyncio
+        pytest
 
     - name: Checkout history
       uses: actions/checkout@v4
