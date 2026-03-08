@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sun Mar 08 15:46:33 UTC 2026","Sun Mar 08 15:46:33 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[--Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-<script>alert('xss')</script>-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -19,8 +19,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 15:46:36 UTC 2026","Sun Mar 08 15:46:44 UTC 2026","8478","tests.smoke","test_smoke","","","","test_smoke_flow",""
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[user@hospital.com-<script>alert('xss')</script>-Invalid credentials]","
+"broken","Sun Mar 08 15:54:33 UTC 2026","Sun Mar 08 15:54:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -40,7 +39,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[user@hospital.com-' OR '1'='1-Invalid credentials]","
+"broken","Sun Mar 08 15:54:33 UTC 2026","Sun Mar 08 15:54:33 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-   -Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -60,7 +59,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[userhospital.com-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:33 UTC 2026","Sun Mar 08 15:54:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-   -Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -80,7 +79,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[   -Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:36 UTC 2026","Sun Mar 08 15:54:36 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -100,7 +99,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[user@hospital.com-   -Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin' OR '1'='1-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -120,7 +119,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[Password@123-user@hospital.com-Invalid credentials]","
+"broken","Sun Mar 08 15:54:35 UTC 2026","Sun Mar 08 15:54:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-  user@hospital.com  -  Password@123  -Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -140,7 +139,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[user@-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:32 UTC 2026","Sun Mar 08 15:54:32 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium--Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -160,7 +159,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:33 UTC 2026","Sun Mar 08 15:46:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[user@hospital.com--Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-' OR '1'='1-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -180,7 +179,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:36 UTC 2026","Sun Mar 08 15:46:36 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[test@hospital.com-123456-Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@#$%^&*()hospital.com-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -200,7 +199,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[admin@hospital.com-WrongPassword123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:35 UTC 2026","Sun Mar 08 15:54:35 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-WrongPassword123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -220,7 +219,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[invaliduser@hospital.com-Admin@Password123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:33 UTC 2026","Sun Mar 08 15:54:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com--Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -240,7 +239,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[user@#$%^&*()hospital.com-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:33 UTC 2026","Sun Mar 08 15:54:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-userhospital.com-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -260,7 +259,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:36 UTC 2026","Sun Mar 08 15:46:36 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[admin@hospital.com-password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-<script>alert('xss')</script>-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -280,7 +279,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[admin' OR '1'='1-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:36 UTC 2026","Sun Mar 08 15:54:36 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-test@hospital.com-123456-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -300,7 +299,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:33 UTC 2026","Sun Mar 08 15:46:33 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:34 UTC 2026","Sun Mar 08 15:54:34 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@hospital.com-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -320,7 +319,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@hospital.com-Password@123-Invalid credentials]","
+"broken","Sun Mar 08 15:54:35 UTC 2026","Sun Mar 08 15:54:35 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -340,7 +339,8 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:34 UTC 2026","Sun Mar 08 15:46:34 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[<script>alert('xss')</script>-Password@123-Invalid credentials]","
+"passed","Sun Mar 08 15:41:38 UTC 2026","Sun Mar 08 15:41:49 UTC 2026","11042","tests.smoke","test_smoke","","","","test_smoke_flow",""
+"broken","Sun Mar 08 15:54:35 UTC 2026","Sun Mar 08 15:54:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-Password@123-user@hospital.com-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -360,7 +360,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:36 UTC 2026","Sun Mar 08 15:46:36 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[  user@hospital.com  -  Password@123  -Invalid credentials]","
+"broken","Sun Mar 08 15:54:35 UTC 2026","Sun Mar 08 15:54:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[chromium-invaliduser@hospital.com-Admin@Password123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -380,7 +380,8 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"broken","Sun Mar 08 15:46:35 UTC 2026","Sun Mar 08 15:46:35 UTC 2026","0","tests.sanity","test_negative_login","","","","test_negative_login[user@hospital.com-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Invalid credentials]","
+"passed","Sun Mar 08 15:54:23 UTC 2026","Sun Mar 08 15:54:32 UTC 2026","9021","tests.smoke","test_smoke","","","","test_smoke_flow[chromium]",""
+"broken","Sun Mar 08 15:54:23 UTC 2026","Sun Mar 08 15:54:23 UTC 2026","1","tests.sanity","test_negative_login","","","","test_negative_login[chromium---Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
