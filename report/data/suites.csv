@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Mar 08 16:25:01 UTC 2026","Sun Mar 08 16:25:02 UTC 2026","955","tests.sanity","test_negative_login","","","","test_negative_login[chromium---Invalid credentials]","
+"passed","Sun Mar 08 16:31:12 UTC 2026","Sun Mar 08 16:31:13 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com--Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -19,7 +19,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:11 UTC 2026","Sun Mar 08 16:25:12 UTC 2026","946","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com--Invalid credentials]","
+"passed","Sun Mar 08 16:31:26 UTC 2026","Sun Mar 08 16:31:27 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-Password@123-user@hospital.com-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -39,7 +39,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:25 UTC 2026","Sun Mar 08 16:25:26 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-invaliduser@hospital.com-Admin@Password123-Invalid credentials]","
+"passed","Sun Mar 08 16:31:28 UTC 2026","Sun Mar 08 16:31:29 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -59,7 +59,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:19 UTC 2026","Sun Mar 08 16:25:20 UTC 2026","951","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-<script>alert('xss')</script>-Invalid credentials]","
+"passed","Sun Mar 08 16:31:14 UTC 2026","Sun Mar 08 16:31:15 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-   -Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -79,7 +79,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:28 UTC 2026","Sun Mar 08 16:25:29 UTC 2026","944","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-password@123-Invalid credentials]","
+"passed","Sun Mar 08 16:31:19 UTC 2026","Sun Mar 08 16:31:20 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-<script>alert('xss')</script>-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -99,7 +99,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:29 UTC 2026","Sun Mar 08 16:25:30 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium-test@hospital.com-123456-Invalid credentials]","
+"passed","Sun Mar 08 16:31:25 UTC 2026","Sun Mar 08 16:31:26 UTC 2026","946","tests.sanity","test_negative_login","","","","test_negative_login[chromium-invaliduser@hospital.com-Admin@Password123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -119,188 +119,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:02 UTC 2026","Sun Mar 08 16:25:10 UTC 2026","8425","tests.smoke","test_smoke","","","","test_smoke_flow[chromium]",""
-"passed","Sun Mar 08 16:25:21 UTC 2026","Sun Mar 08 16:25:21 UTC 2026","942","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@#$%^&*()hospital.com-Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:26 UTC 2026","Sun Mar 08 16:25:27 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-Password@123-user@hospital.com-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:23 UTC 2026","Sun Mar 08 16:25:23 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:10 UTC 2026","Sun Mar 08 16:25:11 UTC 2026","949","tests.sanity","test_negative_login","","","","test_negative_login[chromium--Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:15 UTC 2026","Sun Mar 08 16:25:16 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@-Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:14 UTC 2026","Sun Mar 08 16:25:15 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-userhospital.com-Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:18 UTC 2026","Sun Mar 08 16:25:19 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-<script>alert('xss')</script>-Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:17 UTC 2026","Sun Mar 08 16:25:18 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-' OR '1'='1-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:12 UTC 2026","Sun Mar 08 16:25:13 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium-   -Password@123-Invalid credentials]","
-    Test negative login scenarios for the hospital portal.
-    
-    This test validates that invalid credentials result in the expected error message.
-    It covers various edge cases including:
-    - Empty fields
-    - Whitespace inputs
-    - Invalid email formats
-    - SQL injection attempts
-    - XSS attempts
-    - Special characters
-    - Extremely long inputs
-    - Incorrect credential combinations
-    
-    Args:
-        login_page: Fixture that provides initialized LoginPage with browser context
-        username: The username to attempt login with
-        password: The password to attempt login with
-        expected_error: The expected error message ""Invalid credentials""
-    "
-"passed","Sun Mar 08 16:25:27 UTC 2026","Sun Mar 08 16:25:28 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-  user@hospital.com  -  Password@123  -Invalid credentials]","
+"passed","Sun Mar 08 16:31:17 UTC 2026","Sun Mar 08 16:31:18 UTC 2026","936","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin' OR '1'='1-Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -321,7 +140,7 @@
         expected_error: The expected error message ""Invalid credentials""
     "
 "passed","Sun Mar 08 15:41:38 UTC 2026","Sun Mar 08 15:41:49 UTC 2026","11042","tests.smoke","test_smoke","","","","test_smoke_flow",""
-"passed","Sun Mar 08 16:25:13 UTC 2026","Sun Mar 08 16:25:14 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-   -Invalid credentials]","
+"passed","Sun Mar 08 16:31:11 UTC 2026","Sun Mar 08 16:31:12 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium--Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -341,7 +160,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:22 UTC 2026","Sun Mar 08 16:25:22 UTC 2026","943","tests.sanity","test_negative_login","","","","test_negative_login[chromium-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@hospital.com-Password@123-Invalid credentials]","
+"passed","Sun Mar 08 16:31:29 UTC 2026","Sun Mar 08 16:31:30 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium-test@hospital.com-123456-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -361,7 +180,7 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:24 UTC 2026","Sun Mar 08 16:25:25 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-WrongPassword123-Invalid credentials]","
+"passed","Sun Mar 08 16:31:18 UTC 2026","Sun Mar 08 16:31:19 UTC 2026","937","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-' OR '1'='1-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
@@ -381,7 +200,188 @@
         password: The password to attempt login with
         expected_error: The expected error message ""Invalid credentials""
     "
-"passed","Sun Mar 08 16:25:16 UTC 2026","Sun Mar 08 16:25:17 UTC 2026","946","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin' OR '1'='1-Password@123-Invalid credentials]","
+"passed","Sun Mar 08 16:31:23 UTC 2026","Sun Mar 08 16:31:24 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:01 UTC 2026","Sun Mar 08 16:31:02 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium---Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:02 UTC 2026","Sun Mar 08 16:31:11 UTC 2026","8447","tests.smoke","test_smoke","","","","test_smoke_flow[chromium]",""
+"passed","Sun Mar 08 16:31:20 UTC 2026","Sun Mar 08 16:31:21 UTC 2026","947","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@hospital.com-<script>alert('xss')</script>-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:15 UTC 2026","Sun Mar 08 16:31:16 UTC 2026","936","tests.sanity","test_negative_login","","","","test_negative_login[chromium-userhospital.com-Password@123-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:16 UTC 2026","Sun Mar 08 16:31:17 UTC 2026","935","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@-Password@123-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:22 UTC 2026","Sun Mar 08 16:31:23 UTC 2026","937","tests.sanity","test_negative_login","","","","test_negative_login[chromium-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@hospital.com-Password@123-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:24 UTC 2026","Sun Mar 08 16:31:25 UTC 2026","931","tests.sanity","test_negative_login","","","","test_negative_login[chromium-admin@hospital.com-WrongPassword123-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:27 UTC 2026","Sun Mar 08 16:31:28 UTC 2026","948","tests.sanity","test_negative_login","","","","test_negative_login[chromium-  user@hospital.com  -  Password@123  -Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:21 UTC 2026","Sun Mar 08 16:31:22 UTC 2026","936","tests.sanity","test_negative_login","","","","test_negative_login[chromium-user@#$%^&*()hospital.com-Password@123-Invalid credentials]","
+    Test negative login scenarios for the hospital portal.
+    
+    This test validates that invalid credentials result in the expected error message.
+    It covers various edge cases including:
+    - Empty fields
+    - Whitespace inputs
+    - Invalid email formats
+    - SQL injection attempts
+    - XSS attempts
+    - Special characters
+    - Extremely long inputs
+    - Incorrect credential combinations
+    
+    Args:
+        login_page: Fixture that provides initialized LoginPage with browser context
+        username: The username to attempt login with
+        password: The password to attempt login with
+        expected_error: The expected error message ""Invalid credentials""
+    "
+"passed","Sun Mar 08 16:31:13 UTC 2026","Sun Mar 08 16:31:14 UTC 2026","945","tests.sanity","test_negative_login","","","","test_negative_login[chromium-   -Password@123-Invalid credentials]","
     Test negative login scenarios for the hospital portal.
     
     This test validates that invalid credentials result in the expected error message.
