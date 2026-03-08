@@ -1,30 +1,21 @@
 import pytest
-from playwright.sync_api import sync_playwright
 from pages.a_login_page import LoginPage
 
-# 1. The URL Provider
+# 1. Configure the built-in 'browser' fixture to be headless for CI
+@pytest.fixture(scope="session")
+def browser_context_args(browser_context_args):
+    return {
+        **browser_context_args,
+        "viewport": {"width": 1920, "height": 1080},
+    }
+
+# 2. The URL Provider
 @pytest.fixture(scope="session")
 def hospital_url():
     return "https://qahackeru3.netlify.app/"
 
-# 2. The Browser Lifecycle (Fixes the asyncio error)
-@pytest.fixture(scope="session")
-def browser_instance():
-    with sync_playwright() as p:
-        # headless=True is required for GitHub Actions
-        browser = p.chromium.launch(headless=True)
-        yield browser
-        browser.close()
-
-# 3. The Page Creator
-@pytest.fixture
-def page(browser_instance):
-    context = browser_instance.new_context()
-    page = context.new_page()
-    yield page
-    context.close()
-
-# 4. The Page Object Initializer
+# 3. The Page Object Initializer 
+# (Notice we use the built-in 'page' fixture here)
 @pytest.fixture
 def login_page(page, hospital_url):
     page.goto(hospital_url)
