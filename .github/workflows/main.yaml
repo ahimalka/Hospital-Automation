@@ -49,6 +49,8 @@ jobs:
         echo "---- conftest.py ----"
         if [ -f conftest.py ]; then cat conftest.py; else echo "conftest.py not found"; fi
         find . -type d -name "__pycache__" -exec rm -rf {} +
+        rm -rf allure-results
+        mkdir -p allure-results
         python -m pytest -p no:asyncio
 
     - name: Checkout history
