@@ -53,27 +53,18 @@ jobs:
         mkdir -p allure-results
         python -m pytest -p no:asyncio
 
-    - name: Checkout history
-      uses: actions/checkout@v4
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: allure-history
-
     - name: Build Allure Report
       if: always()
       run: |
         wget https://github.com/allure-framework/allure2/releases/download/2.24.0/allure-2.24.0.zip
         unzip allure-2.24.0.zip
         export PATH=$PATH:$(pwd)/allure-2.24.0/bin
-        if [ -d allure-history/history ]; then cp -r allure-history/history temp-history; fi
+        rm -rf allure-history
         if [ -d allure-results ] && [ "$(ls -A allure-results 2>/dev/null)" ]; then
           ./allure-2.24.0/bin/allure generate allure-results --clean -o allure-history
         else
           echo "No test results found, skipping report generation"
         fi
-        if [ -d temp-history ]; then cp -r temp-history allure-history/history/; fi
 
     - name: Copy Hospital App to Report Folder
       if: always()
