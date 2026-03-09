@@ -43,8 +43,13 @@ jobs:
     - name: Clean Cache and Run Tests
       # This step handles the fix. We removed the redundant 'Run tests' step below it.
       run: |
+        echo "Running commit: $GITHUB_SHA"
+        echo "---- pytest.ini ----"
+        if [ -f pytest.ini ]; then cat pytest.ini; else echo "pytest.ini not found"; fi
+        echo "---- conftest.py ----"
+        if [ -f conftest.py ]; then cat conftest.py; else echo "conftest.py not found"; fi
         find . -type d -name "__pycache__" -exec rm -rf {} +
-        pytest
+        python -m pytest -p no:asyncio
 
     - name: Checkout history
       uses: actions/checkout@v4
