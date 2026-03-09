@@ -41,17 +41,21 @@ jobs:
       run: playwright install --with-deps
 
     - name: Clean Cache and Run Tests
-      # This step handles the fix. We removed the redundant 'Run tests' step below it.
+      # Everything is now under ONE run block
       run: |
         echo "Running commit: $GITHUB_SHA"
         echo "---- pytest.ini ----"
         if [ -f pytest.ini ]; then cat pytest.ini; else echo "pytest.ini not found"; fi
         echo "---- conftest.py ----"
         if [ -f conftest.py ]; then cat conftest.py; else echo "conftest.py not found"; fi
+        
+        # Prevent ghost code/results
         find . -type d -name "__pycache__" -exec rm -rf {} +
         rm -rf allure-results
         mkdir -p allure-results
-        python -m pytest -p no:asyncio
+        
+        # The ultimate execution command
+        python -m pytest --headless --alluredir=allure-results -p no:asyncio
 
     - name: Build Allure Report
       if: always()
